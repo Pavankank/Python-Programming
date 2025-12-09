@@ -1,0 +1,79 @@
+Python Training: Python Advanced  
+
+Python Regular Expression:
+match()
+search()
+sub()
+findall()
+special characters
+
+Class and Objects:
+Basic OOP Terminology in Python
+Class variable
+Instance variable
+__init__ Method
+Class Inheritance
+Overriding Methods
+Operator Overloading
+Private variable
+Static methods
+Class methods
+
+Python Threads:
+Threading modules
+run()
+start()
+join()
+Locks
+Daemon thread
+Timer
+GIL
+
+Python Queue:
+FIFO queue
+get()
+put()
+empty()
+LifoQueue()
+PriorityQueue()
+Queue with Threads
+task_done()
+producer consumer problem
+
+Python operating system interfaces:
+os.walk()
+os.popen()
+os.system()
+os.remove()
+os.listdir()
+os.rename()
+os.environ
+os.getcwd()
+os.chdir()
+os.access()
+
+Python loggers:
+Creating a Simple Logger
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+Complex logger
+
+Configparser (Avoid hardcoding)
+
+Python operating system interfaces:
+os.rename(src, dst)
+os.listdir(path)
+os.remove(path)
+os.getcwd()
+os.chdir(path)
+os.stat(path)
+Os.path.isdir()
+Os.mkdir()
+Os.makedirs()
+os.access()
+os.walk()
+os.system()
+os.popen()

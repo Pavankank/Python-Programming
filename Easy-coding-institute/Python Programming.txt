@@ -1,0 +1,593 @@
+Python
+======
+
+GUIDO VAN ROSSUM
+
+Python - user friendly, less syntax, less coding, memory efficient
+
+Object oriented programmng, encapsulation, inheritance, polymorphism and abstraction
+
+>>> print(20+20)
+40
+
+>>> print(10,"+",20,"=",10+20)
+10 + 20 = 30
+
+>>> a=10
+>>> b=50
+>>> print(a,b,a+b)
+10 50 60
+>>> print(a,"+",b,"=",a+b)
+10 + 50 = 60
+
+# write a program to calc the area and pereimiter of the rectangle based on inputs length and width
+hints: area=lxb, perimeter=2x(l+b)
+
+>>> l=10
+>>> w=20
+>>> print("Area of the rectangle=",l*w)
+Area of the rectangle= 200
+>>> print("Perimter of the rectangle=",2*l+2*w)
+Perimter of the rectangle= 60
+
+# Write a program to ask user an input and enter a message
+
+Enter your name: Pavan Kankanala
+>>> print("Welcome", name)
+Welcome Pavan Kankanala
+
+# WAP to ask user enter radius and find the area and perimeter of circle?
+
+area = 3.14*r*r
+peri = 2*3.14*r
+
+
+>>> radius = int(input("Enter Radius:"))
+Enter Radius:5
+>>> area = 3.14 * radius * radius
+>>> peri = 2 * 3.14 * radius
+>>> print ("Area of the circle", area)
+Area of the circle 78.5
+>>> print("Perimeter of the circle=",peri)
+Perimeter of the circle= 31.400000000000002
+
+Variables and Data types:
+========================
+
+variable: variable is a container which stores some data
+
+eg: a = 7
+
+variable naming rules:
+
+abc = 5 right
+abc3 = 8 right
+3anb = 9 wrong : should not start with a number
+ab_c = 9 right
+anb_ = 5 right
+_abc = 7 right
+ab$c = 9 wrong : expect underscore _ no special symbol can be used in a variable name
+Abc = 5 right
+aBc = 5 right
+ab, c = wrong
+ab c = wrong
+
+Data Types:
+
+Based on the value we store in the variable its type is decoded
+for eg., if store a number, (integer) then its type would automatically become integer
+
+a=9
+a type integer
+
+type(a)
+
+a=5.6
+a type float
+
+Types of data types
+
+1. int
+2. float
+3. boolean
+4. complex
+5. string
+6. list
+7. tuple
+8. set
+9. dictionary
+
+>>> a =45
+>>> type(a)
+<class 'int'>
+>>> a=4.5
+>>> type(a)
+<class 'float'>
+>>> a=5+3j
+>>> type(a)
+<class 'complex'>
+>>> a=5>3
+>>> type(a)
+<class 'bool'>
+>>> print(a)
+True
+>>> print(type(a))
+<class 'bool'>
+>>> a =hello
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hello' is not defined
+>>> a='hello'
+>>> type(a)
+<class 'str'>
+>>> a="hello"
+>>> type(a)
+<class 'str'>
+>>> a
+'hello'
+>>> m=[1,2,3,4,5]
+>>> type(m)
+<class 'list'>
+>>> m
+[1, 2, 3, 4, 5]
+>>> print(m)
+[1, 2, 3, 4, 5]
+>>> 
+>>> t=(1,2,3,4,5)
+>>> type(t)
+<class 'tuple'>
+>>> t
+(1, 2, 3, 4, 5)
+>>> s={3,4,2,1,6}
+>>> type(s)
+<class 'set'>
+>>> t
+(1, 2, 3, 4, 5)
+>>> d={4:2, 7:3, 1:9}
+>>> type(d)
+<class 'dict'>
+>>> d
+{4: 2, 7: 3, 1: 9}
+>>> d.get(1)
+9
+
+
+Operators:
+
+Arithmetic operators: +, -, *, /, %, **, //
+
+/ - exact fraction value
+% - remainder
+** - power
+// - quotient
+
+comparison operators: <, >, <=, >=, ==, !=
+
+>>> 3>5
+False
+
+>>> 3==3
+True
+
+Assignment operators: =, +=, -+, -=, *=, /=, **=, //=, %=
+
+a+=b --> a = a+b
+
+>>> a =5
+>>> b=7
+>>> a
+5
+>>> a+=b
+>>> a
+12
+
+
+Sequence Assignment: a, b, c = 7,2,8
+
+>>> a, b, c = 7,2,8
+>>> a
+7
+>>> b
+2
+>>> c
+8
+
+target assignment: a=b=c=9
+
+>>> a=b=c=10
+>>> a
+10
+>>> b
+10
+>>> c
+10
+
+logical operators: and, or, not
+
+>>> 5 > 3 and 6<2 and 9>5 --> If one statement is false, the output will be false in and operator
+False
+
+
+>>> 5 > 3 or 6<2 or 9>5 
+True
+
+not: true will become false and false will become true
+
+>>> 5 > 3 or 6<2 or 9>5
+True
+>>> not(5 > 3 or 6<2 or 9>5)
+False
+
+
+Bitwise operators:
+
+& --> and
+| --> or
+^ --> x or --> works same like OR. same symbols will return zero
+<< l shift
+>> r shift
+~ compliment
+
+
+a = 2	0	1	0
+b = 3	0	1	1
+a << 1	1	0	0 = 4
+a >> 1	0 	0	1 = 1
+a ^ b	0	0	1
+a ~ 
+
+
+Membership operator: in, not in
+
+mylist = [1,2,3,6,7,8]
+num= int(input("enter a number:"))
+print(num in mylist)
+
+$ python3 ./pg1.py 
+enter a number:10
+False
+
+
+Identity operator: is, is not
+
+>>> a,b = 5,3
+>>> a is b
+False
+>>> a,b=5,5
+>>> a is b
+True
+>>> a is not b
+False
+
+
+alias operator: as
+
+>>> import math as m
+>>> m.pi
+3.141592653589793
+>>> m.log(10
+... )
+2.302585092994046
+
+
+#### Write a prog to swap the values of a and b
+
+in general we write in other code as:
+
+a = 5
+b = 8
+print(a,b)
+a = temp
+a = b
+b = temp
+print(a,b)
+
+But in python we use:
+
+a,b = 5,8
+a,b = b,a. # "a" refers to "b" memory location and "b" refers to "a" memory location
+print(a,b) 
+
+>>> a,b=5,8
+>>> a,b=b,a
+>>> print(a,b)
+8 5
+
+#### Ask user to enter your bike mileage and liters of petrol and calculate distance in cost of travel
+
+hint: 
+dist = mil * lit
+cost = lit * 110
+
+mil = int(input("Enter the mileage of the bike:"))
+lit = int(input("Enter the liters of petrol:"))
+
+print("Distance:", mil * lit, "kms")
+print("cost:", lit * 110, "/-")
+
+
+$ python3 ./pg1.py 
+ENter the mileage of the bike:50
+Enter the liters of petrol:5  
+Distance: 250 kms
+cost: 550 /-
+$ python3 ./pg1.py 
+ENter the mileage of the bike:50
+Enter the liters of petrol:5.5
+Traceback (most recent call last):
+  File "./pg1.py", line 2, in <module>
+    lit = int(input("Enter the liters of petrol:"))
+ValueError: invalid literal for int() with base 10: '5.5'
+$ python3 ./pg1.py 
+ENter the mileage of the bike:50
+Enter the liters of petrol:5.5
+Distance: 275.0 kms
+cost: 605.0 /-
+
+#### Ask user to enter marks for 3 subjects
+Enter maths
+Enter physics
+Enter chemistry
+
+Get Total
+Get percentage
+
+maths = int(input("Enter maths marks:"))
+phy = int(input("Enter physics marks:"))
+chem = int(input("Enter chemistry marks:"))
+
+total=maths+phy+chem
+percent=total/3
+
+print("Total:",total)
+print("Percentage:",percent,"%")
+
+Control Structures:
+==================
+
+IF Function
+syntax: 	IF CONDITION:
+			STATEMENTS;
+			STATEMENTS;	# IF BLOCK
+		ELSE:
+			STATEMENTS;
+			STATEMENTS;	# ELSE BLOCK
+
+If condition is true it will execute if block, if condition is false it executes else block
+
+### Write a program to find the largest number from two given numbers
+
+a,b=5,9
+if a>b:
+ print(a, "is big")
+else:
+ print(b, "is big")
+
+#### ask user to enter age and display whether he is eligible to vote or not
+
+age=int(input("Enter age of the person to see if they are eligible to vote:"))
+
+if age > 18:
+	print("The person is eligible to vote")
+else:
+	print("the person is not eligible to vote")
+
+#### WAP to check the given number is positive or negative
+
+num=int(input("Enter a number to see if it positive or negative:"))
+if num < 0:
+	print("Num is negative")
+else:
+	print("Num is positive")
+
+### Write a program to check if the given number is even or odd
+
+num=int(input("Enter a number to see if it is even or odd:"))
+
+div=num % 2
+
+if div == 0 :
+	print("Num is even")
+else:
+	print("Num is odd")
+
+### nested if
+=============
+
+an if condition inside another if condition
+
+### WAP to find largest number out of 3 numbers
+
+a,b,c=3,6,9
+
+if a>b:
+	if a>c:
+		print(a,"is big")
+	else:
+		print(c, "is big")
+else:
+	if b>c:
+		print(b,"is big")
+	else:
+		print(c, "is big")
+
+#### WAP to find the grade based on the percentage. 
+If percentage is between 90 to 100 -- A++ grade
+80 to 90 -- A+ grade
+70 to 80 -- A grade
+60 to 70 -- B grade
+Below -- No grades
+
+
+per= int(input("Enter the percentage to find the grade"))
+if per > 90 & per < 100:
+	print("A++ Grade")
+else:
+	if per > 90 & < 80:
+		print ("A+ Grade")
+	else: 
+		if per > 80 & per < 70:
+			print ("A Grade")
+		else:
+			if per > 60 & per < 70:
+				print ("B Grade")
+			else:
+				print ("No Grade")
+	
+
+#####################
+if per >=90 and per<=100:
+	print("A++ Grade")
+elif per >=80 and per <90:
+	print("A+ Grade")
+
+######## WAP to display the category based on the age
+IF age is between 0 to 3 then infants
+3 to 12 - kids
+13 to 19 teenagers
+20 to 40 Adults
+40 to 60 middle age
+> 60 senior citizens
+
+
+age = int(input("Enter the age of the person to find the category:"))
+if age>=0 and age<=3:
+	print("The person is an infant")
+elif age > 3 and age <=12:
+	print("The person is a kid")
+elif age > 12 and age <=19:
+	print("The person is a teen")
+elif age >=20 and age <=40:
+	print("The person is an adult")
+elif age > 40 and age <=60:
+	print ("The person is a middle aged")
+else:
+	print("The person is a senior citizen")
+
+##### WAP to ask user to enter 3 subject marks. If he fails in atleast one subject then you need to display the result as FAIL or else display his percentage.
+
+maths=int(input("Enter maths marks"))
+chem=int(input("Enter maths marks"))
+phy=int(input("Enter maths marks"))
+
+Total = maths + chem + phy
+per = total/3
+
+if maths < 40 or chem < 40 or phy < 40:
+	print("The person failed in atleast one subject")
+else:
+	print("The students percentage is:", per)
+
+	
+Characters and Codes:
+
+0 to 9 --> numbers
+A to Z --> alphabets
+a to z --> small
+%^&# --> symbols
+
+each is a character and every character is having a unique code..
+
+A --> 65 --> This is universal
+@ --> 64
+
+to see this we have some functions..
+
+ord(): it takes the character and to gives the code
+chr(): this will take code as input and gives corresponding character as output
+
+>>> ch = 'A'
+>>> print(ord(ch))
+65
+>>> print(chr(65))
+A
+>>> print(chr(64))
+@
+
+# WAP to print the codes for the following characters
+
+A =
+Z = 
+a =
+z =
+
+0 =
+
+>>> print(ord('A'))
+65
+>>> print(ord('Z'))
+90
+>>> print(ord('a'))
+97
+>>> print(ord('z'))
+122
+>>> print(ord('0'))
+48
+>>> print(ord('9'))
+57
+wap to ask user enter a character
+
+and display whether he entered a capital alphabet, small, number or a special symbol
+
+[kankanala@Pavans-MacBook-Pro-2:/Users/kankanala/Documents/Python-Programming]$ cat pg1.py 
+ch=input("Enter a character to find if it is alpha or num or special char:")
+
+num=ord(ch)
+
+if num>=65 and num<=90:
+	print(ch,"is a upper case letter")
+elif num>=97 and num<=122:
+	print(ch,"is a lower case letter")
+elif num>=48 and num<=57:
+	print(ch,"is a numbner")
+else:
+	print(ch,"is a special character")
+
+
+# WAP if user enters alphabet, then convert the case to smaller and viceversa.
+If user is entering a number, then it should say please enter alpha
+If user is entering a symbol, then it should say please enter alpha
+
+
+# WAP to find the quadrants based on the input x and y axis values.
+
+x=int(input("Enter the x value:"))
+y=int(input("Enter the y value:"))
+
+if x>0 and y>0:
+	print(x,",",y," values are in Quad 1")
+elif x<0 and y>0:
+	print(x,",",y," values are in Quad 2")
+elif x<0 and y<0:
+	print(x,",",y," values are in Quad 3")
+elif x>0 and y<0:
+	print(x,",",y," values are in Quad 4")
+elif x==0 and y>0:
+	print(x,",",y," values are on positive y axis")
+elif x==0 and y<0:
+	print(x,",",y," values are on negative y axis")
+elif y==0 and x>0:
+	print(x,",",y," values are on positive x axis")
+elif y==0 and x<0:
+	print(x,",",y," values are on negative x axis")
+else:
+	print(x,",",y," values are at origin")
+
+## WAP to convert temp from celsius to Fahrenheit
+## WAP to convert length from inches to feet
+## WAP to ask the user enter the salary and display the tax for that salary.
+condition is:
+salaries < 30k/month won't have any tax
+## WAP to display a message want to play?? press y or n.
+If user presses y, then lets play. Else okay have a good day!!
+
+While loop:
+==========
+
+4321 
+
+27+
+
+345 
+
+

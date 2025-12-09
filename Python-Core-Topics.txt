@@ -1,0 +1,185 @@
+Python Training Topics:
+
+Python Training: Python Core
+
+Python Introduction
+Python Installation
+In Windows
+In Linux
+
+Basic Python Syntax:
+Back Slash
+String inside the quotes
+Escape Sequence of String
+Formatted Output
+
+Python Variables and Assignment Statement
+
+Python Operators:
+Python Arithmetic Operators.
+Python Comparison Operators
+Python Assignment Operators
+Python Bitwise Operators
+Python Logical Operators
+Python Membership Operators
+Python Identity Operators
+
+Python Control Statement:
+If
+Else
+
+Python loops:
+For loops
+While loops
+
+Python Break statement
+Python continue statement
+Python pass statement
+
+Python String:
+Subscript Operator
+Slicing
+String methods
+
+Python Tuple:
+Accessing Values
+1. Indexing
+2.Slicing
+3.Updating
+4.max()
+5.min()
+6.in operator
+
+Python List:
+Creating Python List
+
+Python List Operations:
+1.Accessing Values
+2.Updating values
+3.Deleting values
+4.Addition of Python Lists
+5.Multiplication of Python List
+
+Python list function:
+1.max()
+2.min()
+3.list()
+4.cmp()
+
+List methods:
+1.append()
+2.extend()
+3.count()
+4.index()
+5.insert()
+6.pop()
+7.remove()
+8.Sort()
+9.reverse()
+
+List Comprehensions
+
+Python Dictionary:
+Operations on Python dictionary
+Dictionary functions
+Dictionary methods
+
+Python Modules:
+Import Statement
+Locating Python Modules
+Python Package
+
+Python Function:
+Function with arguments
+Function with the argument and return value
+Function with default Argument
+Function with Variable-length arguments
+Keyworded variable length of arguments
+Scope of Variables
+
+Python memory management & Scope:
+Local scope
+Enclosing Scope
+Global scope
+Buit-In scope
+Run-time stack
+Heap
+
+Python Exception:
+Try statement with an except clause
+Multiple Python exception block
+Handling multiple Python exception type
+The try/finally Statement
+Program find its exception type
+Raising an Python exceptions
+User-Defined Exceptions
+
+Python File Input/Output:
+Reading Text from a File
+Writing Text to a File
+
+Special function:
+Lambda
+Map
+Filter
+Reduce
+Repr
+Sorted()
+isinstance()
+len()
+dir()
+zip()
+sum()
+
+Python Random module:
+randint()
+choice(rnlist)
+shuffle()
+randrange()
+sample()
+
+Python Pickle:
+Load
+dump
+
+Python Collections Counter:
+most_common(number)
+Update()
+
+Python Collections Deque:
+Extend
+Append
+Extendleft
+appendleft
+
+Default Dictionary
+
+Named Tuple
+
+Python date and time
+
+Time module:
+time()
+epoch time generation
+gmtime()
+mktime()
+strptime()
+localtime()
+strftime()
+asctime()
+ctime()
+sleep
+
+Datetime module:
+today()
+now()
+timedelta
+
+Calendar module:
+Month()
+isleap( )
+calendar()
+
+pytz:
+country_timezones
+country_names
